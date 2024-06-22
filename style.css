@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    background-image: url('images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 250vh;
+    background-color: hsl(275, 100%, 97%);
+}
+
+.container {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.estrela-titulo {
+    height: 5vh;
+}
+
+h1 {
+    font-size: 30pt;
+    color: hsl(292, 42%, 14%);
+}
+
+.pergunta {
+    font-weight: bolder;
+    color: hsl(292, 42%, 14%);
+    margin-bottom: 40px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.pergunta:hover{
+    color: hsl(292, 16%, 49%);
+}
+
+.div-pergunta {
+    display: flex;
+    align-items: end;
+    position: relative;
+    gap: 10px;
+}
+
+.iEscondeResp {
+    height: 5vh;
+    position: absolute;
+    text-align: right;
+    right: 5px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.resposta,
+.resposta1,
+.resposta2,
+.resposta3 {
+    font-size: 10pt;
+    color: lightslategray;
+    width: 90%;
+    line-height: 20px;
+}
+
+hr{
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+    margin-bottom: 15px;
+}
+
+/*style para celulares*/
+@media screen and (max-width: 480px){
+    body {
+        background-image: url('images/background-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 50vh;
+    }
+
+    .container{
+        width: 90%;
+        margin-bottom: 5vh;
+    }
+
+    .estrela-titulo {
+        height: 3vh;
+    }
+
+    .iEscondeResp {
+        height: 3vh;
+    }
+}
